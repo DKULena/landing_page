@@ -1,0 +1,7 @@
+@media (max-width: 390px) {
+  .container {
+    grid-template-columns: 4fr;
+    margin: auto 20px;
+    grid-template-rows: 794px 1836px 178px;
+  }
+}
