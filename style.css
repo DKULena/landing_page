@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "SpoqaHanSansNeo-Regular";
+}
 .container {
   display: grid;
   margin: 0 320px;
@@ -9,7 +19,7 @@
 header {
   background-color: #f2e9d8;
   grid-area: 1/1/1/13;
-  
+
   height: 662px;
   background-image: url(./src/box-cat.png);
   background-repeat: no-repeat;
@@ -34,15 +44,38 @@ header {
       margin: 31px 0 31px 320px;
     }
     ul {
-        margin-right: 320px;
-    }
-    ul li {
-      display: inline;
-      padding-right: 30px;
+      display: flex;
+      gap: 30px;
+      margin-right: 320px;
+      .download {
+        margin-left: 10px;
+        padding: 15px 30px 15px 29px;
+        background-color: #d97652;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 40px;
+      }
+      li {
+        padding-top: 15px;
+      }
+      font-size: 16px;
     }
   }
   p {
     margin-left: 320px;
+  }
+  .download2 {
+    margin-left: 320px;
+    margin-top: 40px;
+    padding: 15px 30px 15px 29px;
+    background-color: #d97652;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: white;
   }
 
   .name {
@@ -61,8 +94,8 @@ header {
 }
 
 main {
-  /* background-color: aqua; */
   grid-area: 2/1/3/13;
+  margin-top: 900px;
 
   .article1 {
     display: flex;
@@ -147,12 +180,13 @@ main {
   }
 
   .Subscribe {
+    display: flex;
     background-color: #263140;
     color: #fff;
     border-radius: 30px;
+    width: 1280px;
     height: 200px;
     margin-top: 90px;
-
     .box {
       width: 491px;
       height: 100px;
@@ -171,14 +205,45 @@ main {
         line-height: 18px;
       }
     }
+
+    .email {
+      color: #767676;
+      font-size: 16px;
+      line-height: 20px;
+      form {
+        padding: 5px 5px 5px 28px;
+        /* padding-left: 28px; */
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        margin-right: 16px;
+        margin-top: 18px;
+      }
+      .Button {
+        background-color: #d97652;
+        border-radius: 40px;
+        text-align: center;
+        padding: 15px 29px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+      }
+      background-color: white;
+      width: 530px;
+      /* height: 60px; */
+      align-self: center;
+      margin-left: 143px;
+      border-radius: 60px;
+    }
   }
 }
 footer {
-    position: static;
-    right: 0;
-    bottom: 0; /*현재화면 기준에서 바꿀라면?*/
-    left: 0;
-  background-color: bisque;
+  position: static;
+  right: 0;
+  bottom: 0; /*현재화면 기준에서 바꿀라면?*/
+  left: 0;
   grid-area: 3/1/4/13;
   .lookup {
     height: 340px;
@@ -187,6 +252,19 @@ footer {
       width: 100%;
       height: 340px;
       opacity: 0.6;
+    }
+    button {
+        position: relative;
+            left: 1850px;
+            top: -80px;
+            cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-image: url(./src/top-btn.svg);
+        border: 1px solid gray;
+        opacity: 0.9;
+        border-radius: 50%;
+        object-fit: contain;
     }
   }
   img {
@@ -202,10 +280,10 @@ footer {
     margin-top: 45px;
 
     .logo {
-        margin-left: 320px;
+      margin-left: 320px;
     }
     ul {
-        margin-right: 320px;
+      margin-right: 320px;
     }
     ul li {
       display: inline;
