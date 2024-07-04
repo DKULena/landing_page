@@ -2,7 +2,7 @@
   display: grid;
   margin: 0 320px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 902px 1626px 500px;
+  grid-template-rows: auto;
   column-gap: 10px;
 }
 
@@ -151,15 +151,16 @@ main {
     color: #fff;
     border-radius: 30px;
     height: 200px;
+    margin-top: 90px;
 
     .box {
       width: 491px;
       height: 100px;
-      margin-top: 50px;
-      margin-left: 58px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 58px;
 
       .title {
-        padding-top: 50px;
         font-size: 36px;
         line-height: 45px;
         font-weight: bold;
@@ -173,7 +174,7 @@ main {
   }
 }
 footer {
-    position: absolute;
+    position: static;
     right: 0;
     bottom: 0; /*현재화면 기준에서 바꿀라면?*/
     left: 0;
@@ -183,8 +184,9 @@ footer {
     height: 340px;
     img {
       object-fit: cover;
-      width: 1270px;
+      width: 100%;
       height: 340px;
+      opacity: 0.6;
     }
   }
   img {
@@ -199,6 +201,12 @@ footer {
     margin-bottom: 45px;
     margin-top: 45px;
 
+    .logo {
+        margin-left: 320px;
+    }
+    ul {
+        margin-right: 320px;
+    }
     ul li {
       display: inline;
       margin-left: 20px;
