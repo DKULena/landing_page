@@ -9,24 +9,40 @@
 header {
   background-color: #f2e9d8;
   grid-area: 1/1/1/13;
-
+  
+  height: 662px;
   background-image: url(./src/box-cat.png);
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 80% -20%;
   background-size: 415px 766px;
+  position: absolute;
+  top: 104px;
+  left: 0;
+  right: 0;
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2e9d8;
     display: flex;
     align-items: end;
     justify-content: space-between;
     align-items: center;
 
     .logo {
-      margin: 31px 0;
+      margin: 31px 0 31px 320px;
+    }
+    ul {
+        margin-right: 320px;
     }
     ul li {
       display: inline;
       padding-right: 30px;
     }
+  }
+  p {
+    margin-left: 320px;
   }
 
   .name {
@@ -157,6 +173,10 @@ main {
   }
 }
 footer {
+    position: absolute;
+    right: 0;
+    bottom: 0; /*현재화면 기준에서 바꿀라면?*/
+    left: 0;
   background-color: bisque;
   grid-area: 3/1/4/13;
   .lookup {
